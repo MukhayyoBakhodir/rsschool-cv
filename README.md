@@ -1,1 +1,1 @@
-https://github.com/MukhayyoBakhodir/rsschool-cv.git
+https://MukhayyoBakhodir.github.io/rsschool-cv/cv
