@@ -1,2 +1,3 @@
-# rsschool-cv
-CV1
+https://mukhayyobakhodir.github.io/rsschool-cv/cv
+
+https://mukhayyobakhodir.github.io/rsschool-cv/
