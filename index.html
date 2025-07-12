@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Mukhayyo Bakhodir - Aspiring Developer</title>
+  
+</head>
+<body>
+  <header>
+    <img src="assets/pfp.jpg" alt="my picture">
+    <div>
+      <h1>Mukhayyo Bakhodir</h1>
+      <p>mukhayyo@madeupgmail.com</p>
+    </div>
+  </header>
+  <main>
+    <div class="section">
+      <h2>Personal Info</h2>
+      <p>My goal is to become a developer. Despite having no experience in the field, I am confident that my determination, curiosity, and attention to detail will help me achieve it.</p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Basic level of using GitHub</li>
+        <li>Very small knowledge of VS Code</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Code Samples</h2>
+        <pre><code>
+          // Bubble sort
+          function bubbleSort(arr) {
+            let n = arr.length;
+            let swapped;
+            do {
+              swapped = false;
+              for (let i = 0; i &lt; n - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
+                  [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+                  swapped = true;
+                }
+              }
+              n--; // Optimization: Last element is already sorted
+            } while (swapped);
+
+            return arr;
+          }
+      </code></pre>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>HTML for Beginners</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>English</h2>
+      <p>Proficient</p>
+      <ul>
+        <li>Studied the language from age 5 to 23</li>
+        <li>Tutoring English since May 2013 (General English, Speaking and Pronunciation, IELTS, TOEFL, CEFR, EIKEN)</li>
+        <li>Translation of scientific articles (pedagogics and psychology); ABA therapy course materials</li>
+        <li>Interpretation for doctors, ambassadors, business owners, and professionals</li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <a href="https://github.com/MukhayyoBakhodir">GitHub</a>
+      <p>2025</p>
+      <a href="https://rs.school/courses/javascript-ru"><img src="assets/rs-school-logo.svg" alt="rs school logo"></a>
+    </div>
+  </footer>
+</body>
+</html>
