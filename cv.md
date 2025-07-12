@@ -6,7 +6,25 @@ My goal is to become a developer.Despite having no experience in the field, I am
 - basic level of using github
 - very small knowledge of VScode
 # Code samples
-- (will be added by Jul 10)
+```
+// Bubble sort
+function bubbleSort(arr) {
+    let n = arr.length;
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i &lt; n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+            swapped = true;
+        }
+        }
+        n--; // Optimization: Last element is already sorted
+    } while (swapped);
+
+    return arr;
+}
+```
 # Education
 HTML for beginners 
 # English 
