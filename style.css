@@ -44,6 +44,16 @@ ul {
 .section {
     margin-bottom: 2rem;
 }
+pre {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+code {
+    font-family: Consolas, monospace;
+    color: #c7254e;
+}
 footer {
     text-align: center;
     padding: 1rem;

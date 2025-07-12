@@ -31,7 +31,24 @@
 
     <div class="section">
       <h2>Code Samples</h2>
-      <p>(Will be added by Jul 10)</p>
+      <pre><code>function bubbleSort(arr) {
+  let n = arr.length;
+  let swapped;
+
+  do {
+    swapped = false;
+    for (let i = 0; i < n - 1; i++) {
+      if (arr[i] > arr[i + 1]) {
+        // Swap elements
+        [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+        swapped = true;
+      }
+    }
+    n--; // Optimization: Last element is already sorted
+  } while (swapped);
+
+  return arr;
+}</code></pre>
     </div>
 
     <div class="section">
