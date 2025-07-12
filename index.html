@@ -29,24 +29,25 @@
 
     <div class="section">
       <h2>Code Samples</h2>
-      <pre><code>function bubbleSort(arr) {
-  let n = arr.length;
-  let swapped;
+        <pre><code>
+          // Bubble sort
+          function bubbleSort(arr) {
+            let n = arr.length;
+            let swapped;
+            do {
+              swapped = false;
+              for (let i = 0; i &lt; n - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
+                  [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+                  swapped = true;
+                }
+              }
+              n--; // Optimization: Last element is already sorted
+            } while (swapped);
 
-  do {
-    swapped = false;
-    for (let i = 0; i &lt; n - 1; i++) {
-      if (arr[i] > arr[i + 1]) {
-        // Swap elements
-        [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
-        swapped = true;
-      }
-    }
-    n--; // Optimization: Last element is already sorted
-  } while (swapped);
-
-  return arr;
-}</code></pre>
+            return arr;
+          }
+      </code></pre>
     </div>
 
     <div class="section">
