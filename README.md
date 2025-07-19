@@ -1,1 +1,1 @@
-# museum-fixed
+https://mukhayyobakhodir.github.io/rsschool-cv/
