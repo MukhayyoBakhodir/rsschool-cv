@@ -1,0 +1,42 @@
+<section class="tickets" id="tickets">
+  <h2>BUY TICKETS</h2>
+  <div class="line"></div>
+  <div class="ticket-form">
+    <img src="assets/img/buy-form/buy-ticket-img.png" alt="picture" />
+    <div class="ticket-type">
+      <label> Ticket Type: </label>
+      <label>
+        <input type="radio" name="ticket" checked />
+        <span class="ticket-type-option"> Permanent </span>
+      </label>
+      <label>
+        <input type="radio" name="ticket" />
+        <span class="ticket-type-option"> Temporary </span>
+      </label>
+      <label>
+        <input type="radio" name="ticket" />
+        <span class="ticket-type-option"> Combined </span>
+      </label>
+    </div>
+    <form>
+      <label>Amount: </label>
+
+      <p>Basic 18+</p>
+      <div class="quantity-selector">
+        <button class="decrement">−</button>
+        <input type="number" min="1" value="1" />
+        <button class="increment">+</button>
+      </div>
+
+      <p>Senior 65+</p>
+      <div class="quantity-selector">
+        <button class="decrement">−</button>
+        <input type="number" min="1" value="1" />
+        <button class="increment">+</button>
+      </div>
+
+      <span class="total">Total: €220</span>
+      <button type="submit" class="submit">Buy Now</button>
+    </form>
+  </div>
+</section>
