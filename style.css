@@ -492,7 +492,7 @@ h2 {
 }
 
 .contacts address .name {
-  ont-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -539,7 +539,7 @@ footer p {
   padding: 0px 0px; /* optional spacing around grid */
 }
 
-.footer-buttom {
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
