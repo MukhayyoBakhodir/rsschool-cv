@@ -3,13 +3,18 @@
   --white: #ffffff;
   --black: #000000;
   --gold: #9d8665;
+  --header-size1: 150px;
+  --header-size2: 130px;
+  --header-size3: 110px;
+  --header-size4: 90px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 1440px;
-  margin: 0 auto; /* Centers horizontally */
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 main,
@@ -21,11 +26,14 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  height: var(--header-size1);
 }
 
 body {
   background-color: var(--black);
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -67,16 +75,39 @@ h1 {
   letter-spacing: 2px;
   color: var(--white);
   text-decoration: none;
+  cursor: pointer;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: var(--white);
+  /* line-height: 80px; */
+  cursor: pointer;
+  display: none;
+  float: right;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .navigation-menus {
+  left: 10%;
 }
 
 .welcome-section {
   background-image: url("assets/img/welcome-slider/mona_lisa_1.jpg");
   background-position: right;
   background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-position: right top;
+  /* background-size: cover; */
   height: 750px;
+  /* height: 100vh; */
   display: flex;
-  justify-content: left;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 
 .welcome-section .content {
@@ -109,7 +140,7 @@ h1 {
   letter-spacing: 2px;
   color: #ffffff;
   text-decoration: none;
-  margin-bottom: auto;
+  margin-bottom: 0.7rem;
 }
 
 .welcome-section button {
@@ -133,8 +164,12 @@ h1 {
   height: 75px;
   width: 360px;
   margin: 0;
+  margin-bottom: auto;
 }
 
+.welcome-section img {
+  display: none;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -151,14 +186,17 @@ main {
   padding-top: 20px;
 }
 
-.visiting-section h2 {
+h2 {
   font-family: "Forum", serif;
   font-size: 80px;
   letter-spacing: 5px;
-  color: #9d8665;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+}
+
+.visiting-section h2 {
+  color: #9d8665;
 }
 
 .line {
@@ -256,14 +294,7 @@ article img {
 }
 
 .picture-explore h2 {
-  font-family: "Forum", serif;
-  font-size: 80px;
-  letter-spacing: 5px;
   color: var(--white);
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 0px;
 }
 
 .picture-explore p {
@@ -301,12 +332,7 @@ article img {
 
 .video h2 {
   width: 50%;
-  font-family: "Forum", serif;
-  font-size: 80px;
-  letter-spacing: 5px;
   color: var(--gold);
-  font-weight: 400;
-  text-transform: uppercase;
 }
 
 .video p {
@@ -334,12 +360,7 @@ article img {
 }
 
 .gallery h2 {
-  font-family: "Forum", serif;
-  font-size: 80px;
-  letter-spacing: 5px;
   color: var(--white);
-  font-weight: 400;
-  text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -568,4 +589,130 @@ h4 {
 
 footer .line {
   background-color: #666666;
+}
+
+@media (max-width: 1024px) {
+  header {
+    height: var(--header-size2);
+  }
+  .navigation-menus {
+    /* display: none; */
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .navigation-menus {
+    flex-direction: column;
+    position: fixed;
+    left: -100%;
+    top: var(--header-size2);
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+
+    gap: 20px;
+
+    background: var(--black);
+  }
+
+  .welcome-section .content {
+    height: 300px;
+  }
+
+  .welcome-section h2 {
+    font-size: 50px;
+  }
+
+  .welcome-section p {
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+
+  .welcome-section button {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 60px;
+    width: 300px;
+  }
+  .visiting-section .cards {
+    grid-template-columns: repeat(2, 1fr); /* 3 columns of equal width */
+    gap: 40px; /* spacing between items */
+  }
+  h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: var(--header-size3);
+  }
+  .navigation-menus {
+    top: var(--header-size3);
+  }
+
+  .welcome-section {
+    background-image: none;
+    height: 585px;
+  }
+  .welcome-section .content {
+    height: 300px;
+  }
+  .welcome-section h2 {
+    font-size: 40px;
+  }
+  .welcome-section p {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .welcome-section button {
+    display: none;
+  }
+  .welcome-section img {
+    display: block;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    height: var(--header-size4);
+  }
+  .navigation-menus {
+    top: var(--header-size4);
+  }
+  .welcome-section {
+    height: 861px;
+  }
+  .welcome-section h2 {
+    font-size: 28px;
+  }
+  .welcome-section p {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .visiting-section .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  h2 {
+    font-size: 28px;
+  }
 }
