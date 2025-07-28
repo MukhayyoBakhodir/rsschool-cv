@@ -594,9 +594,6 @@ footer .line {
   header {
     height: var(--header-size2);
   }
-  .navigation-menus {
-    /* display: none; */
-  }
 
   .checkbtn {
     display: block;
