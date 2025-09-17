@@ -27,8 +27,8 @@ My goal is to become a front-end developer. Despite having little experience in 
 
 ## Education
 - USWLU
-- [Основы веб-верстки с HTML и CSS – Stepik] ()
-- [JS/Front-end Pre-school RU Course] ()
+- [Основы веб-верстки с HTML и CSS – Stepik] (https://stepik.org/course/129827/promo?search=7047840552)
+- [JS/Front-end Pre-school RU Course] (https://rs.school/courses/javascript-preschool-ru)
 ## English
 Proficient
 - studied the language from the age of 5 to 23
