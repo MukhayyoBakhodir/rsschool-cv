@@ -1,46 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mukhayyo Bakhodir</title>
-</head>
-<body>
-  # Mukhayyo Bakhodir
-## Contact information
-mukhayyo@madeupgmail.com<br>
-<p>+998003950067</p>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Mukhayyo Bakhodir - Aspiring Developer</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Mukhayyo Bakhodir</h1>
+      </div>
+    </header>
+    <main>
+      <div class="Contacts">
+        <h2>Contact information</h2>
+        <p>
+          mukhayyo@madeupgmail.com <br />
+          +998003950067
+        </p>
+      </div>
+      <div class="Personal info">
+        <h2>About me</h2>
+        <p> My goal is to become a front-end developer. Despite having little experience in the field, I am confident that my determination, curiosity and attention to detail will help me achieve it</p>
+      </div>
+      <div class="Skills">
+        <h2>Skills</h2>
+        <ul> <li>Git and Github</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      <li>JS (basics)</li></ul>
+      </div>
+      <div class="Code samples">
+        <h2>Code Samples</h2>
+        <pre><code>
+function blurring() {
+load++;
 
-## About me
-My goal is to become a front-end developer. Despite having little experience in the field, I am confident that my determination, curiosity and attention to detail will help me achieve it!
-## Skills
-- Git and Github
-- HTML
-- CSS
-- JS (basics)
-## Code samples
-  ```
-  function blurring() {
-  load++;
+  if (load > 99) {
+    clearInterval(int);
+  }
 
-    if (load > 99) {
-      clearInterval(int);
-    }
-  
-    loadText.innerText = `${load}%`;
-    loadText.style.opacity = scale(load, 0, 100, 1, 0);
-    bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
- }
- ```
-
-## Education
-- USWLU
-- [Основы веб-верстки с HTML и CSS – Stepik](https://stepik.org/course/129827/promo?search=7047840552)
-- [JS/Front-end Pre-school RU Course](https://rs.school/courses/javascript-preschool-ru)
-## English
-Proficient
-- studied the language from the age of 5 to 23
-- tutoring English as a second and a foreign lanuage since May 2013 (General English, Speaking and Pronunciation, IELTS, TOEFL, EIKEN)
-- from 2017 translating (various scientific articles on pedagogics and psychology; for Certified courses in ABA therapy) and interpreting (for doctors, ambassadors, business owners and other professionals)  
-</body>
+  loadText.innerText = `${load}%`;
+  loadText.style.opacity = scale(load, 0, 100, 1, 0);
+  bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
+}
+      </code></pre>
+      </div>
+      <div class="section">
+        <h2>Education</h2>
+        <ul>
+          <li>UZSWLU</li>
+          <li>Основы веб-верстки с HTML и CSS – Stepik</li>
+          <li>JS/Front-end Pre-school RU Course</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>English</h2>
+        <p>Proficient</p>
+        <ul>
+          <li>Studied the language from age 5 to 23</li>
+          <li>
+            Tutoring English since May 2013 (General English, Speaking and
+            Pronunciation, IELTS, TOEFL, CEFR, EIKEN)
+          </li>
+          <li>
+            Translation of scientific articles (pedagogics and psychology); ABA
+            therapy course materials
+          </li>
+          <li>
+            Interpretation for doctors, ambassadors, business owners, and
+            professionals
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
