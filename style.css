@@ -31,6 +31,15 @@ header img {
   object-fit: cover;
 }
 
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(4, 21, 118, 0.1);
+  border-radius: 8px;
+}
+
 footer {
   background-color: #4aa3e2;
   color: white;
