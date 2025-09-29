@@ -15,6 +15,13 @@ body {
   margin: 0;
 }
 
+header img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
