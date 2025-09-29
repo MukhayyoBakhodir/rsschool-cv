@@ -40,6 +40,12 @@ main {
   border-radius: 8px;
 }
 
+h2 {
+  color: #4a90e2;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
 footer {
   background-color: #4aa3e2;
   color: white;
