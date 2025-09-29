@@ -31,6 +31,22 @@ header img {
   object-fit: cover;
 }
 
+.nav-menu {
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-menu ul li{
+  list-style: none;
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
 main {
   padding: 2rem;
   max-width: 800px;
